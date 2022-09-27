@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Developer Ives Pires</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--Styles-->
+    <link rel="stylesheet" href="./Styles/general.css">
+    <link rel="stylesheet" href="./Styles/home.css">
+    <link rel="stylesheet" href="./Styles/about.css">
+    <link rel="stylesheet" href="./Styles/skills.css">
+    <link rel="stylesheet" href="./Styles/services.css">
+    <link rel="stylesheet" href="./Styles/projetos.css">
+    <!-- Scripts -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/bc039de12f.js" crossorigin="anonymous"></script>
+    <!-- Progress Bar -->
+    <script src="./js/progressbar.mim.js"></script>
+
+</head>
+<body onload="typeWriter(fName)">
+    <!--Menu-->
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="./images/Log.Dev.png" alt="Logo do site"> Ives Pires
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+                  aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navgation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a href="#inicio" class="nav-item nav-link" id="home-menu">Home</a>
+                        <a href="#about-area" class="nav-item nav-link" id="about-menu">About</a>
+                        <a href="#skills-area" class="nav-item nav-link" id="skills-menu">Skills</a>
+                        <a href="#service" class="nav-item nav-link" id="differentials-menu">Differentials</a>
+                        <a href="#portfolio-area" class="nav-item nav-link" id="portifolio-menu">Portifolio</a>
+                        <a href="#data-area" class="nav-item nav-link" id="contact-menu">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!--Home-->
+        <section id="inicio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" id="apresentação">
+                        <p class="descricao">Oi, eu sou<br/>
+                            <span style="display: inline" class="meu-nome">Ives Pires de Miranda.</span>
+                            <br/><!-- Desenvolvedor Full Stack -->Desenvolvedor Front-end
+                        </p>
+                        <br/>
+                        <div id="btn">
+                          <a href="hhttps://www.linkedin.com/in/ives-pires-de-miranda-642a02225/"target="_blank">Linkedin</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="desenho">
+                        <div class="Avatar">
+                            <img class="desenho-3D" src="./images/meuAvatar.png" alt="Eu-em-Metaverso">
+                            <h6 class="card-3D"><span>Freelancer.Developer<br><br>“Seja resiliente, acredite no seu <br> potencial, creia que é capaz e você será!”<hr></h6>
+                            <ul>
+                              <li class="icon-main text-center-mobile">
+                                <a href="https://www.instagram.com/ives_pmiranda/">
+                                  <i class="fa-brands fa-square-instagram" id="icon-main"></i>
+                                </a>
+                                <a href="https://github.com/Piresives" target="_blank">
+                                  <i class="fa-brands fa-square-github" id="icon-main"></i>
+                                </a>
+                                <a href="javascript:void(0)" onclick="whatsSendMessage()">
+                                  <i class="fa-brands fa-square-whatsapp" id="icon-main"></i>
+                                </a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Sobre mim-->
+        <div id="about-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h3 class="main-title">Sobre mim</h3>
+                </div>
+                <div class="col-md-6">
+                  <img class="img-fluid" src="./images/person.svg" alt="">
+                </div>
+                <div class="col-md-6" id="sobre-mim">
+                  <p>Olá! Me chamo Ives Pires e eu sou um apaixonado por tecnologia que decidiu trilhar o caminho da programação.</p>
+                  <p>Estou cursando Análise e Desenvolvimento de Sistemas na UNIP e agregando meus estudos com o Ignite da Rocketseat, já possuo experiencia com Desenvolvimento Web e trabalho em equipe utilizando metodologias ágeis.</p>
+                  <p>Atualmente sou encarregado de estoque, porém atuo como desenvolvedor freelancer buscando uma transição de carreira para esse incrivél mundo da tecnologia. Adoro desafios e acredito na transformação do mundo com o poder da informação.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!--Minhas Skills-->
+        <article id="skills-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col">
+                        <h3 class="main-title">Minhas <strong>Skills</strong></h3>
+                        <div id="skillsSlider" class="carousel slide" data-ride="carousel" data-interval="10000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#skillsSlider" data-slide-to="0" class="active"></li>
+                                <li data-target="#skillsSlider" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-md-2 col-4">
+                                            <div class="single-box">
+                                                <div class="img-area"><img src="./images/icon-html 5.png" alt=""></div>
+                                                <div class="img-text">
+                                                <h5>HTML</h5>        
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                      <div class="single-box">
+                                        <div class="img-area"><img src="./images/icon-css 3.png" alt=""></div>
+                                        <div class="img-text">
+                                          <h5>CSS</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                      <div class="single-box">
+                                        <div class="img-area"><img src="./images/icon-javascript.png" alt=""></div>
+                                        <div class="img-text">
+                                          <h5>JavaScript</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                      <div class="single-box">
+                                        <div class="img-area"><img src="./images/icon-nodeJS.png" alt=""></div>
+                                        <div class="img-text">
+                                          <h5>NodeJS</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                      <div class="single-box">
+                                        <div class="img-area"><img src="./images/icon-react.png" alt=""></div>
+                                        <div class="img-text">
+                                          <h5>ReactJS</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                      <div class="single-box">
+                                        <div class="img-area"><img src="./images/icon-bootstrap.png" alt=""></div>
+                                        <div class="img-text">
+                                          <h5>Bootstrap</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Slider escondido-->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-2 col-4">
+                                        <div class="single-box">
+                                            <div class="img-area"><img src="./images/icon-php.png" alt=""></div>
+                                            <div class="img-text">
+                                                <h5>PHP</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                      <div class="single-box">
+                                        <div class="img-area"><img src="./images/icon-mysql.png" alt=""></div>
+                                        <div class="img-text">
+                                          <h5>MySQL</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                      <div class="single-box">
+                                        <div class="img-area"><img src="./images/icon-wordpress.png" alt=""></div>
+                                        <div class="img-text">
+                                          <h5>Wordpress</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                        <div class="single-box">
+                                            <div class="img-area"><img src="./images/icon-git.png" alt=""></div>
+                                            <div class="img-text">
+                                                <h5>Git</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                        <div class="single-box">
+                                            <div class="img-area"><img src="./images/icon-github.png" alt=""></div>
+                                            <div class="img-text">
+                                                <h5>GitHub</h5>
+                                            </div>
+                                         </div>
+                                    </div>
+                                    <div class="col-md-2 col-4">
+                                        <div class="single-box">
+                                            <div class="img-area"><img src="./images/icon-figma.png" alt=""></div>
+                                            <div class="img-text">
+                                                <h5>Figma</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#skillsSlider" class="carousel-control-prev" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#skillsSlider" class="carousel-control-next" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </article>
+
+        <!--Diferencias-->
+        <section id="service">
+            <video autoplay muted loop>
+                <source src="./movie/studio.mp4" type="video/mp4">
+            </video>
+            <div class="col-12">
+                <h3 class="main-title">Power <strong>Up</strong></strong></h3>
+            </div>
+            <div class="container">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="song-1" >
+                        <h4>Clean Code</h4>
+                        <p class="card-text">Durante o desenvolvimento tenho como principal fundamento a qualidade do meu código, seguindo as melhores práticas do mercado.</p>
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <h4>SEO profissional</h4>
+                        <p>Tenha tudo que o Google recomenda em suas páginas institucionais. Ofereço serviço especializado de SEO para potencializar ainda mais seu website personalizado.</p>
+                        <i class="fa-brands fa-google"></i>
+                    </label>
+                    <label class="card" for="item-3" id="song-3">
+                        <h4>Metodologias ágeis</h4>
+                        <p class="card-text">Utilizo de planejamentos otimizados que aceleram o fluxo de produção e desenvolvimento. Através de feedback e interações constantes, eu garanto agilidade e eficiência do processo.</p>
+                        <i class="fa-solid fa-clock"></i>
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <!--Portifólio-->
+        <section id="portfolio-area">
+            <div class="container" id="my-portfolio">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Meus <strong>Projetos</strong></h3>
+                    </div>
+                    <div class="col-md-12" id="filter-btn-box">
+                        <button class="main-btn filter-btn active" id="all-btn">Todos</button>
+                        <button class="main-btn filter-btn" id="php-btn">PHP</button>
+                        <button class="main-btn filter-btn" id="js-btn">JavaScript</button>
+                        <button class="main-btn filter-btn" id="client-btn">Clientes</button>  
+                    </div>
+                    <div class="col-md-4 project-box js">
+                        <span class="description">
+                            <img class="img-fluid" src="./images/project-1.png" alt="projeto pizzaria">
+                            <h4>RocketNews</h4>
+                            <p>Página para captação de leads. Contem um formulário para que o usuário possa inserir o e-mail e um botão para o envio do mesmo.<br><br>Tecnologias: <strong>(HTML e CSS)</strong></p>
+                            <button><a href="https://piresives.github.io/Desafio-RocketNews/" target="_blank"><i class="fa-solid fa-link"></i> CONFIRA</a></button>
+                        </span>
+                    </div>
+                    <div class="col-md-4 project-box js">
+                        <span class="description">
+                            <img class="img-fluid" src="./images/project-2.png" alt="projeto pizzaria">
+                            <h4>nlwEsports</h4>
+                            <p>É uma aplicação WEB para ajudar os players a encontrarem parceiros para jogarem juntos. O projeto conta com uma lista de games predefinida. É possível criar um anúncio para buscar novos colegas de game.<br>Tecnologias: <strong>(HTML, JS, TypeScript, NodeJS, ReactJS, Tailwind css, Prisma e Radix UI)</strong></p>
+                            <button><a href="https://github.com/Piresives/nlwEsports" target="_blank"><i class="fa-solid fa-link"></i> CONFIRA</a></button>
+                        </span>
+                    </div>
+                    <div class="col-md-4 project-box js">
+                        <span class="description">
+                            <img class="img-fluid" src="./images/project-4.png" alt="projeto pizzaria">    
+                            <h4>Relógio Temático</h4>
+                            <p>O projeto tem como base mostrar um relógio digital, mostrando a hora exata do dia. Eu complementei o projeto trazendo uma troca de background conforme a vontade do usuário.<br>Tecnologias: <strong>(HTML, CSS e JS)</strong></p>
+                            <button><a href="https://piresives.github.io/themed_clock/" target="_blank"><i class="fa-solid fa-link"></i> CONFIRA</a></button>
+                        </span>
+                    </div>
+                    <div class="col-md-4 project-box php">
+                        <span class="description">
+                            <img class="img-fluid" src="./images/project-5.png" alt="projeto pizzaria">
+                            <h4>Pizzaria Don João</h4>
+                            <p>Este projeto apresenta a pizzaria Don João, onde você poderá escolher até dois sabores de pizzas, e acompanhar seu pedido, averiguando se está em preparo, finalizado ou entregue.<br>Tecnologias: <strong>(HTML, CSS, PHP, Bootstrap e MySQL)</strong></p>
+                            <button><a href="https://github.com/Piresives/pizzaria" target="_blank"><i class="fa-solid fa-link"></i> CONFIRA</a></button>
+                        </span>
+                    </div>
+                    <div class="col-md-4 project-box js">
+                        <span class="description ">
+                            <img class="img-fluid" src="./images/project-6.png" alt="projeto pizzaria">
+                            <h4>MegaLinks</h4>
+                            <p>É um super link para o instagram, projeto feito na Maratona Explorer 2.0 da Rocktseat.<br><br><br>Tecnologias: <strong>(HTML,CSS)</strong></p>
+                            <button><a href="https://piresives.github.io/MegaLinks/" target="_blank"><i class="fa-solid fa-link"></i> CONFIRA</a></button>
+                        </span>
+                    </div>
+                    <div class="col-md-4 project-box client ">
+                        <span class="description ">
+                            <div class="loading">
+                                <img class="img-fluid" src="./images/coffee.gif" alt="projeto pizzaria">
+                                <h4><br>🚧 Em Produção 🚧 <br></h4>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact-->
+        <article>
+            <div id="data-area">
+                <div id="contact" class="contact">
+                    <div class="container">
+                        <div class="row py-4">
+                            <div class="col-md-12 text-center" id="skillsSlider">
+                                <h3 class="main-title">Fale comigo</h3>
+                                <p>"Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entraremos em contato."</p>
+                                <div class="col-md-8 mx-auto">
+                                    <div id="email-alert">
+                                        <form action="">
+                                            <div class="row">
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="name" class="form-label">Seu Nome (*)</label>
+                                                    <input type="text" class="form-control" id="name">
+                                                </div>
+                                                <div class="col-md-6 mb-3">
+                                                    <label for="email" class="form-label">E-MAIL(*)</label>
+                                                    <input type="email" class="form-control" id="email">
+                                                </div>
+                                                <div class="col-md-4 mb-3">
+                                                    <label for="phone" class="form-label">TELEFONE</label>
+                                                    <input type="phone" class="form-control" id="phone">
+                                                </div>
+                                                <div class="col-md-8 mb-3">
+                                                    <label for="subject" class="form-label">ASSUNTO (*)</label>
+                                                    <input type="text" class="form-control" id="subject">
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <label for="message" class="form-label">MENSAGEM (*)</label>
+                                                    <textarea class="form-control" id="message" rows="4"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 text-center d-grid mt-2">
+                                                <button onclick="sendEmailContact()" class="btn btn-primary btn-lg">Enviar</button>
+                                            </div>                                           
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!--Footer-->
+        <footer>
+            <div class="container" id="footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo">
+                            <img id="logo" src="./images/Log.Dev.png" alt=""><br>
+                            <p>Thanks for visiting my Portfolio.</p>
+                        </div>
+                    </div>
+                
+                <div class="col-md-4 medias">
+                    <ul class="my-auto">
+                        <li>
+                            <h3>Contato</h3>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-square-phone-flip me-2 ola" id="icon-main"><p>(17) 98806-9408</p></i>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope me-2 ola" id="icon-main"><p> ivespmiranda@hotmail.com</p></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 medias">
+                    <h3>Social Media</h3>
+                    <div class="social">
+                        <a href="https://github.com/Piresives" target="_blank">
+                            <i id="icon-main" class="fa-brands fa-square-github"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/ives_pmiranda/" target="_blank">
+                            <i id="icon-main" class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="javascript:void(0)" onclick="whatsSendMessage()">
+                            <i id="icon-main" class="fa-brands fa-square-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ives-pires-de-miranda-642a02225/">
+                            <i id="icon-main" class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </footer>
+    </main>
+    <script type="text/javascript" src="./assets/js/vanilla-tilt.js" ></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/scroll.js"></script>
+</body>
+</html>

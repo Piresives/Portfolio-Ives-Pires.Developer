@@ -1,0 +1,86 @@
+/*Minhas Skills*/
+article{
+    background-color: var(--base-color);
+}
+
+strong{
+    color: var(--text-color-strong);
+}
+
+#skillsSlider{
+    background-color: rgb(225, 225, 225, 0.1);
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    backdrop-filter: blur(1rem);
+    box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0,0.5);
+    
+    margin-bottom: 4rem;
+
+    border-top-color: rgb(225, 225, 225, 0.5);
+    border-right-color: rgb(225, 225, 225, 0.1);
+    border-bottom-color: rgb(225, 225, 225, 0.1);
+    border-left-color: rgb(225, 225, 225, 0.5);
+}
+
+.single-box{
+    padding: 0.6rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.img-area{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.img-text{
+    color: var(--text-color);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.carousel-indicators{
+    left: 0;
+    top: auto;
+    bottom:-35px;
+}
+
+.carousel-indicators li{
+    background-color: var(--text-color);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+
+.carousel-indicators .active{
+    background-color: var(--base-color-efect);
+}
+
+.carousel-control-prev{
+    padding-right: 1rem;
+    margin-left: -2rem;
+}
+
+.carousel-control-next{
+    padding-left: 1rem;
+    margin-right: -2rem;
+}
+
+
+@media screen and (max-width: 480px){
+    #skillsSlider{
+        box-shadow: none;
+    }
+    .carousel-control-prev{
+        padding-right: 0.2rem;
+        margin-left: -1rem;
+    }
+    .carousel-control-next{
+        padding-left: 0.2rem;
+        margin-right: -1rem;
+    }
+}
+
+
