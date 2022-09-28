@@ -11,7 +11,7 @@ function typeWriter (nome) {
         setTimeout(function (){
             meuNome.innerHTML += letra;
         }, 150 * index)
-    })}, 1500)
+    })}, 1300)
 }
 
 //Animação Card
