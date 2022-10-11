@@ -58,6 +58,10 @@ header, .navbar {
     width: 75px;
 }
 
+footer #logo{
+    width: 180px;
+}
+
 .navbar-brand {
     padding: 0;
     color: var(--text-color);
